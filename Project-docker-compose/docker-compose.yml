@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    image: rkalluru/d43-nginx:v3
+    ports:
+      - "80:80"
+    environment:
+      TOMCAT_IP: tomcat
+  app:
+    image: rkalluru/d43-tomcat:v1
+    container_name: tomcat
+    environment:
+      DBSERVER: mariadb
+  db:
+    image: mariadb
+    container_name: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
