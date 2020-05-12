@@ -1,4 +1,4 @@
-FROM        tomact:8.5
+FROM        tomcat:8.5
 ADD         https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war webapps/student.war
 ADD         https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar lib/mysql-connector.jar
 
