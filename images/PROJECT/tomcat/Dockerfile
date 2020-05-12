@@ -5,4 +5,4 @@ ADD     https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war webapps/st
 ADD     https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar lib/mysql-connector.jar
 COPY    context.xml conf/context.xml
 COPY    catalina.sh bin/catalina.sh
-RUN     sudo chmod +x bin/catalina.sh
+RUN     chmod +x bin/catalina.sh sudo
