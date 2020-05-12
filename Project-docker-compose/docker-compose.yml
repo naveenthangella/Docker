@@ -1,13 +1,13 @@
 version: '3'
 services:
   web:
-    image: rkalluru/d43-nginx:v3
+    image: naveenthangella/nginx:v1
     ports:
       - "80:80"
     environment:
       TOMCAT_IP: tomcat
   app:
-    image: rkalluru/d43-tomcat:v1
+    image: naveenthangella/tomcat:v1
     container_name: tomcat
     environment:
       DBSERVER: mariadb
